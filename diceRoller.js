@@ -17,3 +17,11 @@ return Math.floor(Math.random()* max) +1
 }
 
 console.log(rollRandomDice(6))
+
+// ajouter un écouteur d'évènement : lorsque l'utilisateur saisi une ligne et appui sur entrée (input) 
+
+rl.on('line', (input) => {
+    //on stocke le résultat dans une constante 
+    const commande = (`Vous avez saisi : ${input}`)
+    console.log(commande)
+})
