@@ -22,6 +22,15 @@ console.log(rollRandomDice(6))
 
 rl.on('line', (input) => {
     //on stocke le résultat dans une constante 
-    const commande = (`Vous avez saisi : ${input}`)
-    console.log(commande)
+    // ajout trim() et toLowerCase pour supprimer les espaces et les majuscules
+    const commande = input.toLowerCase().trim()
+    console.log (`Vous avez saisi ${commande}`)
+
 })
+
+
+
+
+
+// if (commande === 'help') {
+//      console.log(`Indiquez un nombre pour lancer des dés, ou "bye" pour quitter.`);
